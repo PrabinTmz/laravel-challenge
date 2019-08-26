@@ -1,0 +1,21 @@
+# The Docker image to run your workspace in
+image:
+  file: Dockerfile
+
+# Command(s) to start on workspace startup
+tasks:
+  - init: >
+      composer install &&
+      cp .env.example .env &&
+      php artisan key:generate
+    command: >
+      export PATH=$PATH:vendor/bin &&
+      mysql -u root -e "create database laravel";
+
+# Ports to expose on workspace startup
+ports:
+  - port: 8000
+    onOpen: open-browser
+
+  - port: 3306
+    onOpen: ignore
