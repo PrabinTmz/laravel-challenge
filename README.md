@@ -20,13 +20,19 @@ In this project, you'll be building a laravel 5.8 application following the Test
 
 
 ### Prerequisites
-* Laravel 5.8 
+* Laravel 5.8
 * PHP 7
 * MySQL Server.
 * Any Preferred Workbench (Sequel Pro, MySQL Workbench) for SQL Databases.
 
 
 ### Setup
+**Gitpod: Cloud/Web IDE**
+1. Visit <https://gitpod.io/#https://github.com/Yamsafer/laravel-challenge>
+2. Wait until startup tasks finishes.
+3. *Voila :tada:, Happy Coding!*
+
+**Local Development**:
 1. Clone the Repository: `git clone https://github.com/Yamsafer/codeality-laravel.git`.
 2. Run `composer install` to Install Dependencies.
 3. Copy contents of  `.env.example` file to a new file `.env`, If you're on Mac OSX just run: `cp .env.example .env`
